@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import android.content.Intent;
+
 import com.example.lab4_20190674.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(R.layout.activity_main);
+        setContentView(binding.getRoot());
+        binding.ingresar.setOnClickListener(view -> {
+            Intent intent = new Intent(this, juego.class);
+            startActivity(intent);
+
+        });
     }
 }

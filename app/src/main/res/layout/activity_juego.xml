@@ -8,17 +8,16 @@
     android:background="@drawable/background_degradado">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="com.example.lab4_20190674.fragments.BlankFragment"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197"
-        tools:layout="@layout/fragment_blank" />
+        app:navGraph="@navigation/nav_graph" />
 
     <Button
         android:id="@+id/button2"
@@ -44,4 +43,19 @@
         app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintVertical_bias="0.9"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_remove_red_eye_24" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
