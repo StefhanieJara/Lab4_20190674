@@ -31,7 +31,7 @@
             android:padding="3dp">
 
             <ImageView
-                android:id="@+id/eliminar"
+                android:id="@+id/cerrar"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="-5dp"
