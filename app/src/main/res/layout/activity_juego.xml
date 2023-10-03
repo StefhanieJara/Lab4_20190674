@@ -25,7 +25,7 @@
         android:layout_height="49dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#d19c0d"
-        android:text="Button"
+        android:text="Ir al acelerometro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/agregar"
         app:layout_constraintHorizontal_bias="0.865"
