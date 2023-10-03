@@ -79,11 +79,11 @@ public class lista2Adapter extends RecyclerView.Adapter<lista2Adapter.Aceleromet
         }
     }
 
-    public List<Results> getListaMagnet() {
+    public List<Results> getListaAcelerometro() {
         return listaAcelerometro;
     }
 
-    public void setListaMagnet(List<Results> listaMagnet) {
+    public void setListaAcelerometro(List<Results> listaMagnet) {
         this.listaAcelerometro = listaMagnet;
     }
 
@@ -99,7 +99,7 @@ public class lista2Adapter extends RecyclerView.Adapter<lista2Adapter.Aceleromet
         return personasAcelerometro;
     }
 
-    public void setPersonasMagnetometroVM(AcelerometroViewModel personasAcelerometroVM) {
+    public void setPersonasAcelerometroVM(AcelerometroViewModel personasAcelerometroVM) {
         this.personasAcelerometro = personasAcelerometroVM;
     }
 
