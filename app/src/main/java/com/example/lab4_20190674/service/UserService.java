@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 
 public interface UserService {
 
-    @GET("/api")
-    Call<Profile> getResults();
+    @GET("/api/")
+    Call<Profile> random();
 }

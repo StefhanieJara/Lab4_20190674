@@ -77,7 +77,7 @@ public class AcelerometroFragment extends Fragment implements SensorEventListene
         vistadelVMu.getVistaActual().observe(this, vistaActual->{
             Log.i("AcelerometroFragment", "Valor observado: " + vistaActual);
             if (vistaActual.equals("Magnetómetro")){
-                navController.navigate(R.id.action_blankFragment_to_acelerometroFragment);
+                navController.navigate(R.id.action_acelerometroFragment_to_blankFragment);
             }
         });
         return binding.getRoot();
